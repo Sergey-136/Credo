@@ -1,0 +1,26 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Declare two integer variables
+        int x = 5;
+        int b = 10;
+
+        // Display values before swapping
+        Console.WriteLine("Before swapping:");
+        Console.WriteLine("x = " + x);
+        Console.WriteLine("b = " + b);
+
+        // Swap the values using a temporary variable
+        int temp = x;
+        x = b;
+        b = temp;
+
+        // Display values after swapping
+        Console.WriteLine("\nAfter swapping:");
+        Console.WriteLine("x = " + x);
+        Console.WriteLine("b = " + b);
+    }
+}
