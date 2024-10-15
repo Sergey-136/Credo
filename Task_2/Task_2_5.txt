@@ -1,0 +1,41 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Prompt the user for height and weight
+        Console.WriteLine("Enter your weight in kilograms (kg): ");
+        string weightInput = Console.ReadLine();
+        Console.WriteLine("Enter your height in meters (m): ");
+        string heightInput = Console.ReadLine();
+
+        // Parse the input values to double
+        double weight = double.Parse(weightInput);
+        double height = double.Parse(heightInput);
+
+        // Calculate BMI
+        double bmi = weight / (height * height);
+
+        // Display the BMI value
+        Console.WriteLine($"Your BMI is: {bmi:F2}"); // F2 formats the output to 2 decimal places
+
+        // Provide advice based on BMI value
+        if (bmi < 18.5)
+        {
+            Console.WriteLine("You are underweight. It's recommended to consult with a healthcare provider for guidance.");
+        }
+        else if (bmi >= 18.5 && bmi < 24.9)
+        {
+            Console.WriteLine("You have a normal weight. Keep up the good work!");
+        }
+        else if (bmi >= 25 && bmi < 29.9)
+        {
+            Console.WriteLine("You are overweight. Consider a balanced diet and regular exercise.");
+        }
+        else
+        {
+            Console.WriteLine("You are obese. It's advisable to seek guidance from a healthcare provider for a proper plan.");
+        }
+    }
+}

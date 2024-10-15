@@ -1,0 +1,49 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Declare variables of various types
+        int intValue = 10;
+        double doubleValue = 9.99;
+        float floatValue = 5.5f;
+        decimal decimalValue = 100.5m;
+
+        // Implicit conversions (where possible)
+
+        // int to double (implicit, because double can store int)
+        double fromIntToDouble = intValue;
+        Console.WriteLine("Implicit int to double: " + fromIntToDouble);
+
+        // float to double (implicit, because double has more precision)
+        double fromFloatToDouble = floatValue;
+        Console.WriteLine("Implicit float to double: " + fromFloatToDouble);
+
+        // Explicit conversions (type casting is required)
+
+        // double to int (explicit, possible precision loss)
+        int fromDoubleToInt = (int)doubleValue;
+        Console.WriteLine("Explicit double to int: " + fromDoubleToInt);
+
+        // float to int (explicit, possible precision loss)
+        int fromFloatToInt = (int)floatValue;
+        Console.WriteLine("Explicit float to int: " + fromFloatToInt);
+
+        // decimal to double (explicit)
+        double fromDecimalToDouble = (double)decimalValue;
+        Console.WriteLine("Explicit decimal to double: " + fromDecimalToDouble);
+
+        // decimal to float (explicit, possible precision loss)
+        float fromDecimalToFloat = (float)decimalValue;
+        Console.WriteLine("Explicit decimal to float: " + fromDecimalToFloat);
+
+        // double to decimal (explicit)
+        decimal fromDoubleToDecimal = (decimal)doubleValue;
+        Console.WriteLine("Explicit double to decimal: " + fromDoubleToDecimal);
+
+        // int to decimal (implicit, no precision loss)
+        decimal fromIntToDecimal = intValue;
+        Console.WriteLine("Implicit int to decimal: " + fromIntToDecimal);
+    }
+}

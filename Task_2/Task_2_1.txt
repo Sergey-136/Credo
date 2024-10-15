@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Task2
+{
+    internal class Program
+    {
+        static void Main()
+        {
+            // Declare two variables
+            int number1 = 10;
+            int number2 = 3;
+
+            // Perform arithmetic operations
+            int sum = number1 + number2;          // Addition
+            int difference = number1 - number2;   // Subtraction
+            int product = number1 * number2;      // Multiplication
+            int quotient = number1 / number2;     // Division
+            int remainder = number1 % number2;    // Remainder (Modulo)
+
+            // Print the results to the console
+            Console.WriteLine("Sum: " + sum);
+            Console.WriteLine("Difference: " + difference);
+            Console.WriteLine("Product: " + product);
+            Console.WriteLine("Quotient: " + quotient);
+            Console.WriteLine("Remainder: " + remainder);
+
+        }
+    }
+}

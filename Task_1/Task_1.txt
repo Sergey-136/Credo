@@ -1,0 +1,28 @@
+
+
+
+1) 17 = 10001
+   34 = 100010
+   255 = 11111111
+
+
+2) 10101 = 21
+   110011 = 51
+   10000000 = 128
+
+3) 
+In C#, a variable is a symbolic name associated with a storage location in memory where data can be stored. Variables can hold different types of data such as integers, floating-point numbers, characters, strings, etc.
+
+Declaring and Initializing Variables in C#
+Declaration: To declare a variable, you specify the data type followed by the variable name. Declaration does not allocate a value to the variable; it only reserves a space in memory for it.
+
+Initialization: You can also initialize a variable, meaning you assign it an initial value when you declare it. Initializing a variable allocates a value to the memory location reserved for that variable.
+
+
+Example:
+
+int age;  // Declaration
+age = 25; // Initialization
+
+// Or both at once:
+int age = 25; // Declaration + Initialization
