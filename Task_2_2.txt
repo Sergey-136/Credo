@@ -1,0 +1,22 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Declare variables of type float, double, and decimal
+        float floatValue = 1.0f / 7.0f;    // 'f' indicates float type
+        double doubleValue = 1.0 / 7.0;    // double is the default for floating-point numbers
+        decimal decimalValue = 1.0m / 7.0m; // 'm' indicates decimal type
+
+        // Multiply each variable by 7
+        float floatResult = floatValue * 7;
+        double doubleResult = doubleValue * 7;
+        decimal decimalResult = decimalValue * 7;
+
+        // Print the results
+        Console.WriteLine("Float Result: " + floatResult.ToString("R"));   // "R" ensures maximum precision
+        Console.WriteLine("Double Result: " + doubleResult.ToString("R"));
+        Console.WriteLine("Decimal Result: " + decimalResult.ToString("G29")); // "G29" for maximum decimal precision
+    }
+}
